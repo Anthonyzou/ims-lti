@@ -4,7 +4,7 @@ Package.describe({
   // Brief, one-line summary of the package.
   summary: 'ims-lti bindings for meteor',
   // URL to the Git repository containing the source code for this package.
-  git: 'git@github.com:Anthonyzou/ims-lti.git',
+  git: 'https://github.com/Anthonyzou/ims-lti',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: null
@@ -23,6 +23,5 @@ Npm.depends({
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('onlea:lti');
   api.addFiles('lti-tests.js');
 });
